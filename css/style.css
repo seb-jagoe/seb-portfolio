@@ -289,6 +289,33 @@ input[type=submit] {
   padding: 5% 10%;
   position: relative;
   z-index: 1;
+  transition: ease-in 0.3s;
+}
+
+/* WEB BACKGROUND COLOR CLASSES */
+
+.section-light-js-imre {
+  background-color: #121212 !important;
+  color: var(--light-color);
+}
+.section-light-js-imre h2 {
+  color: #D9AE37;
+}
+
+.section-light-js-learn {
+  background-color: #ECE2D0;
+}
+.section-light-js-next {
+  background: #221B2F;
+  color: var(--light-color);
+}
+.section-light-js-evalynn {
+  background: #2E3233;
+  color: var(--light-color);
+}
+
+.btn-js {
+  color: var(--light-color) !important;
 }
 
 .section-light h3 {

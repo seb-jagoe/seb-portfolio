@@ -64,3 +64,47 @@ $(document).ready(function(){
   // The second paramter is the speed between each letter is typed.   
   autoType(".type-js",70);
 });
+
+// WEB BACKGROUND COLOR
+
+$(document).ready(function(){
+	
+	$(".imre").hover(function(){
+		$(".section-light").addClass("section-light-js-imre");
+		$("a").addClass("btn-js");
+	},function(){
+    $(".section-light").removeClass("section-light-js-imre");
+    $("a").removeClass("btn-js");
+	})
+})
+
+$(document).ready(function(){
+	
+	$(".learn").hover(function(){
+		$(".section-light").addClass("section-light-js-learn");
+	},function(){
+    $(".section-light").removeClass("section-light-js-learn");
+	})
+})
+
+$(document).ready(function(){
+	
+	$(".next").hover(function(){
+    $(".section-light").addClass("section-light-js-next");
+    $("a").addClass("btn-js");
+	},function(){
+    $(".section-light").removeClass("section-light-js-next");
+    $("a").removeClass("btn-js");
+	})
+})
+
+$(document).ready(function(){
+	
+	$(".evalynn").hover(function(){
+    $(".section-light").addClass("section-light-js-evalynn");
+    $("a").addClass("btn-js");
+	},function(){
+    $(".section-light").removeClass("section-light-js-evalynn");
+    $("a").removeClass("btn-js");
+	})
+})
