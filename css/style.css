@@ -122,11 +122,12 @@ hr {
   transition: 0.4s;
   width: 90%;
   margin: 2%;
-  max-width: 400px;
+  max-width: 200px;
+  filter: invert(100%);
 }
 
 .link-imgs:hover {
-  filter: invert(100%);
+  filter: invert(0%);
   cursor: pointer;
 }
 
@@ -356,11 +357,11 @@ nav .navbar-nav li a:hover{
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   h3 {
@@ -385,6 +386,25 @@ nav .navbar-nav li a:hover{
   }
 }
 
+/* HIDE AND SHOW MOBILE */
+@media only screen and (max-width: 992px){
+  .hide-mobile {
+    display: none;
+  }
+
+  .show-mobile {
+    display: inline-block !important;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.show-mobile {
+  display: none;
+}
+
 .moon-img {
   position: absolute;
   bottom: 40%;
@@ -395,4 +415,41 @@ nav .navbar-nav li a:hover{
 
 .btn {
   color: var(--highlight-color)
+}
+
+.why-seb p {
+  color: rgb(75, 75, 75);
+}
+
+.headline {
+  position: absolute;
+  top: 104px;
+  left: auto;
+  right: auto;
+  margin-left: -110px;
+}
+
+.cursor{
+  display: block;
+  position: absolute;
+  height: 70%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: var(--light-color);
+  z-index: 1;
+  animation: flash 3s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.text-js{
+  opacity: 0;
 }
