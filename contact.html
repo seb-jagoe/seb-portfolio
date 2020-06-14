@@ -2,64 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seb Jagoe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="profile_pic.ico">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="icon" href="images/profile_pic.ico">
+  <script src="https://kit.fontawesome.com/0bd5930842.js" crossorigin="anonymous"></script>
 </head>
+<body onLoad="navLoader(), footerLoader()">
+  <!-- NAVBAR -->
+  <div id="nav-placeholder"></div>
 
-<body class="audio-body">
-  <div class="navbar">
-    <a href="index.html"><img src="images/MountainOuline.png" alt="Synth" class="synth-logo-img"></a>
-    <ul>
-      <li><a href="index.html">Jagoe</a></li>
-      <li><a href="image.html">Image</a></li>
-      <li><a href="audio.html">Audio</a></li>
-      <li><a href="web.html">Web</a></li>
-    </ul>
+<div class="container-fluid section-dark" align="center">
+  <div class="row">
+    <div class="col-lg-12 section-dark">
+      <h1>Contact</h1>
+      <h3>Let's talk.</h3>
+      <h2>I can help bring your project to life.<br>
+        <hr>
+      <img src="images/moonlit-hills.png" alt="Moonlit Hills" class="collage3">
+    <hr>
+    <h2>What do you want to make?</h2>
+    <p>I'll use the best technologies to make it happen.</p>
+    <div class="col-lg-12">
+      <h2><a href=""><i class="fa fa-reply" aria-hidden="true"></i> seb.jagoe@gmail.com</a></h2>
+    </div>
+    <div class="col-lg-12">
+    <a href="mailto:seb.jagoe@gmail.com" target="blank" class="btn btn-outline-light btn-lg"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Email</a>
+    <!-- COPY EMAIL -->
+    <button class="btn btn-outline-light btn-lg btnClipboardJS" onClick="copiedToClipboardEmail()" id="alertEmail" data-clipboard-text="seb.jagoe@gmail.com"><i class="fa fa-link" aria-hidden="true"></i> Copy Email</button>
   </div>
+    <hr>
 
-  <div class="middle-container-audio">
-    <table cellspacing=70>
-      <tr>
-        <td class="ilikemusic"><h5>Let's get in touch!</h5></td>
-        <td><p>I'd love to hear about your project and see what I can offer.</p></td>
-      </tr>
-    </table>
   </div>
+</div>
+</div>
 
-  <div class="contact-container">
-    <div class="contact">
-      <form action="action_page.php">
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        <label for="country">You're contacting me for: </label>
-        <select id="country" name="country">
-          <option value="freelance">Web Development</option>
-          <option value="graphic">Graphic Design</option>
-          <option value="music">Music</option>
-        </select>
-    
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
-      <h2>Or, just <span class="underline"><a href="mailto:sebastianthomsonjagoe@gmail.com">email</a></span> me directly: <a href="mailto:sebastianthomsonjagoe@gmail.com">sebastianthomsonjagoe@gmail.com</a></h2>
+<div class="container-fluid section-light" align="center">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>I make things online.</h3>
+      <h2>View the rest of my work here.</h2>
+    </div>
+    <div class="col-lg-12">
+      <a href="web.html" class="btn btn-outline-dark btn-lg">Web</a>
+      <a href="audio.html" class="btn btn-outline-dark btn-lg">Audio</a>
+      <a href="image.html" class="btn btn-outline-dark btn-lg">Image</a>
+    </div>
+    <div class="col-lg-12">
+      <a href="index.html" class="btn btn-outline-dark"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back Home</a>
     </div>
   </div>
+</div>
 
-  <div class="footer-container">
-    <div class="footer">
-      <p>Website and all images created by Sebastian Jagoe | 2020</p>
-    </div>
+<div class="row">
+  <div class="col-lg-12" align="center">
+    <p style="font-size: 0.9rem">Designed and developed by Sebastian Jagoe | 2020</p>
   </div>
+</div>
 
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+
+  <script>
+
+    var rellax = new Rellax('.rellax');
+
+  </script>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script>
+    new ClipboardJS('.btnClipboardJS');
+  </script>
 </body>
 </html>

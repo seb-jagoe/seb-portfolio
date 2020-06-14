@@ -49,7 +49,7 @@ a:hover, a:active {
   background-color: var(--dark-color);
   transition: top 0.3s;
   z-index: 5;
-  opacity: 0.98;
+  border-bottom: 2px solid var(--highlight-color)
 }
 
 /* FONTS */
@@ -77,14 +77,16 @@ p {
 
 /* CONTAINERS */
 
-.landing-wrapper {
+#landing-wrapper {
   position: relative;
   text-align: center;
   color: var(--light-color);
 }
 
 .mountains_png {
-  width: 100vw;
+  width: 100%;
+  /* HEIGHT IS FOR SAFARI GLITCH */
+  height: 20%;
   margin-top: 40vh;
   margin-bottom: -20px;
   z-index: 2;
@@ -116,13 +118,6 @@ hr {
   border-color: var(--highlight-color);
 }
 
-.footer-container {
-  height: 30px;
-}
-.footer {
-  text-align: center;
-}
-
 .link-imgs {
   transition: 0.4s;
   width: 90%;
@@ -144,10 +139,11 @@ hr {
 
 .mountain-lines {
   position: absolute;
-  bottom: 800px;
-  width: 100vw;
+  width: 100%;
   opacity: 0.3;
   left: 0px;
+  bottom: -30px;
+  z-index: 2;
 }
 
 
@@ -179,7 +175,6 @@ hr {
 .collage:hover {
   height: 500px;
   cursor: pointer;
-  
 }
 
 .collage2 {
@@ -295,6 +290,10 @@ input[type=submit] {
   z-index: 1;
 }
 
+.section-light h3 {
+  color: var(--dark-color)
+}
+
 .section-light a {
   color: var(--dark-color);
   text-decoration: underline var(--highlight-color);
@@ -312,6 +311,12 @@ input[type=submit] {
 
 .section-web img {
   padding: 4%;
+}
+
+.work-header {
+  min-height: 220px;
+  position: relative;
+  z-index: -2;
 }
 
 /* LANDING PAGE */
@@ -345,6 +350,49 @@ input[type=submit] {
   color: var(--highlight-color) !important;
 }
 
+nav .navbar-nav li a:hover{
+  color: var(--highlight-color) !important;
+  }
+
 @media only screen and (max-width: 600px) {
-  
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .landing-wrapper h1, .work-header h1 {
+    font-size: 4rem;
+  }
+
+  .collage:hover {
+    height: 300px;
+  }
+
+  .moon-img {
+    top: 70%;
+  }
+
+  .mountain-lines {
+    bottom: -20px;
+    height: 300px;
+  }
+}
+
+.moon-img {
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+  width: 10vw;
+  max-width: 60px;
+}
+
+.btn {
+  color: var(--highlight-color)
 }
