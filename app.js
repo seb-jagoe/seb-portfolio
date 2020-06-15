@@ -108,6 +108,29 @@ $(document).ready(function(){
     $("a").removeClass("btn-js");
 	})
 })
+$(document).ready(function(){
+	
+	$(".old").hover(function(){
+    $(".section-light").addClass("section-light-js-old");
+	},function(){
+    $(".section-light").removeClass("section-light-js-old");
+	})
+})
+$(document).ready(function(){
+	$(".days").hover(function(){
+    $(".section-dark").addClass("section-dark-js-days");
+	},function(){
+    $(".section-dark").removeClass("section-dark-js-days");
+	})
+})
+// SEB LANDING PAGE
+$(document).ready(function(){
+	$(".imgseb").hover(function(){
+    $(".imgseb-gradient").addClass("show");
+	},function(){
+    $(".imgseb-gradient").removeClass("hide");
+	})
+})
 
 // GO BACK
 
