@@ -161,7 +161,7 @@ hr {
 /* IMG PAGE */
 
 .img-clouds {
-  width: 70%;
+  height: 60vh;
 }
 
 .collage {
@@ -189,10 +189,6 @@ hr {
   cursor: pointer;
 }
 
-.collage3 {
-  width: 50%;
-}
-
 /* IMG Display */
 
 .img-display {
@@ -203,10 +199,8 @@ hr {
   text-align: center;
 }
 
-.contact {
-  background-color: #221b2f;
-  color: #e6d9d3;
-  padding: 30px;
+.contact-img {
+  width: 80%;
 }
 
 input {
@@ -322,8 +316,9 @@ input[type=submit] {
 .section-light-js-old {
   background: #D3DCCF;
 }
-.section-light-js-old h2 {
+.section-light-js-old h2, .section-light-js-old hr {
   color: #F4A77A;
+  border-color: #F4A77A;
 }
 .section-dark-js-days {
   background: #2B3538;
@@ -333,7 +328,7 @@ input[type=submit] {
   border-color: #345A5D;
 }
 .section-dark-js-days a {
-  color: #EBE1C2;
+  color: #376366;
 }
 
 .btn-js {
@@ -520,4 +515,8 @@ nav .navbar-nav li a:hover{
   opacity: 0.1;
   mix-blend-mode: screen;
   pointer-events: none;
+}
+
+.synth {
+  width: 200px;
 }
