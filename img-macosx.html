@@ -2,56 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Seb Jagoe</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="animate.min.css">
   <link rel="icon" href="images/profile_pic.ico">
+  <script src="https://kit.fontawesome.com/0bd5930842.js" crossorigin="anonymous"></script>
 </head>
+<body onLoad="navLoader(), footerLoader()">
+  <!-- NAVBAR -->
+  <div id="nav-placeholder"></div>
 
-<body class="audio-body">
-  <div class="navbar">
-    <a href="index.html"><img src="images/MountainOuline.png" alt="Synth" class="synth-logo-img"></a>
-    <ul>
-      <li><a href="index.html">Jagoe</a></li>
-      <li><a href="image.html">Image</a></li>
-      <li><a href="audio.html">Audio</a></li>
-      <li><a href="web.html">Web</a></li>
-    </ul>
+<div class="container-fluid section-dark" align="center">
+  <div class="col-lg-12">
+    <h1>Digital Art</h1>
+    <hr>
+    <img src="images/moonlit.png" alt="Moonlit" class="img-clouds">
+    <hr>
+    <p>Vector interpretation of a Mac OSX wallpaper, 2020</p>
   </div>
-
+  <div class="col-lg-12">
+    <button onclick="goBack()" class="btn btn-lg btn-outline-light"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Go Back</button>
   </div>
+</div>
 
-  <div class="img-landing-container">
-    <table cellspacing=70>
-      <tr>
-        <td class="ilikemusic"><img src="images/moonlit.png" alt="Mountains" class="img-display"></a></td>
-      </tr>
-    </table>
-  
-  </div>
-
-  <div class="middle-container-audio">
-    <table cellspacing=70>
-      <tr>
-        <td class="ilikemusic"><h5>Adobe Illustrator</h5></td>
-        <td><p>Making vectors of Mac OS X desktop backgrounds is a fun way to practice.</p></td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="skills-container">
-    <div class="skills">
-      <a href="contact.html"><img src="images/seb.png" alt="Seb Jagoe" class="finca-png"></a>
-      <p>Talk to me about your next project. I would love to work with you and help you realize your vision!</p>
-      <p>Send me an <a href="contact.html"><span class="underline">email</span></a>, or shoot me message on your favourite social media!</p>
+<div class="container-fluid section-light" align="center">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>I make things online.</h3>
+      <h2>View the rest of my work here.</h2>
+    </div>
+    <div class="col-lg-12">
+      <a href="web.html" class="btn btn-outline-dark btn-lg">Web</a>
+      <a href="audio.html" class="btn btn-outline-dark btn-lg">Audio</a>
+      <a href="image.html" class="btn btn-outline-dark btn-lg">Image</a>
+    </div>
+    <div class="col-lg-12">
+      <a href="index.html" class="btn btn-outline-dark"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back Home</a>
     </div>
   </div>
+</div>
+<!-- g -->
+<div id="footer-placeholder"></div>
 
-  <div class="footer-container">
-    <div class="footer">
-      <p>Website and all images created by Sebastian Jagoe | 2020</p>
-    </div>
-  </div>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+
+  <script>
+
+    var rellax = new Rellax('.rellax');
+
+  </script>
+<script src="app.js"></script>
 </body>
 </html>
