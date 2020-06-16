@@ -201,6 +201,7 @@ hr {
 
 .contact-img {
   width: 80%;
+  border-radius: 10px;
 }
 
 input {
@@ -519,4 +520,32 @@ nav .navbar-nav li a:hover{
 
 .synth {
   width: 200px;
+}
+
+.img-container {
+
+}
+
+.sebfgbg {
+  width: 50%;
+  position: relative;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.fg {
+  position: absolute;
+  left: 28%;
+  right: 50%;
+  bottom: 120px;
+  z-index: -1;
+}
+
+.block {
+  width: 100vw;
+  height: 400px;
+  position: absolute;
+  z-index: -1;
+  left: 20%;
+  background-color: var(--dark-color);
 }
