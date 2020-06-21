@@ -27,7 +27,7 @@ a {
   text-decoration: none;
   color: var(--light-color);
   cursor: pointer;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 a:hover, a:active {
@@ -520,10 +520,6 @@ nav .navbar-nav li a:hover{
 
 .synth {
   width: 200px;
-}
-
-.img-container {
-
 }
 
 .sebfgbg {

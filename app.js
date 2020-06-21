@@ -48,10 +48,15 @@ function footerLoader(){
 
 // SLIDING NAVBAR
 
-window.onscroll = function() {scrollFunction()};
 
+window.onscroll = function() {scrollFunction()};
+if (document.title = "Seb Jagoe") {
+  var pixels = 900;
+} else {
+  var pixels = 20;
+}
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > pixels || document.documentElement.scrollTop > pixels) {
     document.getElementById("navbar-block").style.top = "0";
   } else {
     document.getElementById("navbar-block").style.top = "-60px";
@@ -137,3 +142,12 @@ $(document).ready(function(){
 function goBack() {
   window.history.back();
 }
+
+// NAV ACTIVE
+
+  $(document).ready(function() {
+	// get current URL path and assign 'active' class
+  var pathname1 = window.location.pathname;
+  var pathname = pathname1.slice(1);
+	$('.navbar-nav > li > a[href ="'+pathname+'"]').parent().addClass('active');
+})
