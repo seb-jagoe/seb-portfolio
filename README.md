@@ -6,4 +6,4 @@ This is my **old portfolio**. Definetely make sure to check my <a href="https://
 
 If you want to see my old portfolio take a look here:
 
-🚀 <a href="https://hecklerjim.github.io/seb-portfolio/">View Site</a>
+🚀 <a href="https://seb-jagoe.github.io/seb-portfolio/">View Site</a>
